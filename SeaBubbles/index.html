@@ -7,6 +7,7 @@
   <meta name="viewport" content="width = device - width, intital-scale = 1, shrink-to-fit=no">
   <title>Sea Bubbles</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -16,7 +17,7 @@
 <body id="homePage" data-spy="scroll" data-target=".navBar" data-offset="60">
   <header>
     <nav class="navbar fixed-top navbar-expand-lg bg-dark">
-      <a class="navbar-brand" href="#"><img src="logo.png" style="width:50px;"></a>
+      <a class="navbar-brand" href="#"><img class= "logo" src= "logo.png" alt= "SB"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -86,12 +87,13 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>`
+  </div>
 
   <div id="packages" class="container-fluid text-center">
     <h1>Scuba Packages</h1>
     <br>
-    <div class="row slideAnim">
+    <div class="row slideanim">
+      <div class="package-container">
       <div id="uncertified" class="col-sm-6">
         <h3>Uncertified</h3>
         <div class="link-wrapper">
@@ -99,12 +101,10 @@
             <img src="scubafix1.jpg" alt="uncertified packages">
               <a href="uncertified.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">More Info</a>
             </img>
-            </div>
           </div>
+        </div>
 
-          <br>
-
-          <h6>little bit of info</h6>
+          <h5>little bit of info</h5>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales nunc ac magna laoreet fermentum. Maecenas sollicitudin
             est eu felis vulputate imperdiet. Fusce commodo, neque quis faucibus aliquet, turpis nibh imperdiet purus, nec ultrices sem
@@ -113,29 +113,31 @@
             et malesuada fames ac turpis egestas. Vestibulum ornare odio eget justo feugiat accumsan. Nulla in venenatis ante. Duis at risus mi.
             Phasellus imperdiet libero justo. Proin vitae orci vel justo tempor lacinia
           </p>
+        </div>
       </div>
+
+    <div class="package-container">
       <div id="certified" class="col-sm-6">
-        <h3>Uncertified</h3>
+        <h3>Certified</h3>
         <div class="link-wrapper">
           <div class="link-image">
             <img src="scubafix2.jpg" alt="certified packages">
-              <a href="uncertified.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">More Info</a>
+              <a href="certified.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">More Info</a>
             </img>
-            </div>
           </div>
-
-          <br>
-
-          <h6>little bit of info</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales nunc ac magna laoreet fermentum. Maecenas sollicitudin
-            est eu felis vulputate imperdiet. Fusce commodo, neque quis faucibus aliquet, turpis nibh imperdiet purus, nec ultrices sem
-            ligula sed enim. Morbi lobortis maximus ex, eu mollis turpis lacinia nec. Curabitur et leo ut diam porta sodales nec vitae nunc.
-            Integer tellus tellus, maximus eget eleifend quis, volutpat sit amet odio. Pellentesque habitant morbi tristique senectus et netus
-            et malesuada fames ac turpis egestas. Vestibulum ornare odio eget justo feugiat accumsan. Nulla in venenatis ante. Duis at risus mi.
-            Phasellus imperdiet libero justo. Proin vitae orci vel justo tempor lacinia
-          </p>
+        </div>
+        
+        <h5>little bit of info</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales nunc ac magna laoreet fermentum. Maecenas sollicitudin
+          est eu felis vulputate imperdiet. Fusce commodo, neque quis faucibus aliquet, turpis nibh imperdiet purus, nec ultrices sem
+          ligula sed enim. Morbi lobortis maximus ex, eu mollis turpis lacinia nec. Curabitur et leo ut diam porta sodales nec vitae nunc.
+          Integer tellus tellus, maximus eget eleifend quis, volutpat sit amet odio. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ornare odio eget justo feugiat accumsan. Nulla in venenatis ante. Duis at risus mi.
+          Phasellus imperdiet libero justo. Proin vitae orci vel justo tempor lacinia
+        </p>
       </div>
+    </div>
     </div>
   </div>
 
@@ -147,9 +149,22 @@
   </div>
 
   <footer class="footer-copyright text-center py-3">
-    <a class="navbar-brand" href="#">SB</a>
-    <br>
-    <p>&copy Website by: Nick Schneider & Braydon Bell</p>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="footer-nav">
+          <a class= "social-link" target= "_blank"><i class="fab fa-facebook fa-3x"></i></a><a class= "social-link" target= "_blank"><i class="fab fa-youtube fa-3x"></i></a><a class= "social-link" target= "_blank"><i class="fab fa-yelp fa-3x"></i></a>
+        </div>
+      </div>
+      <div style="padding-top: 10px;" class="col-sm-4">
+        <i class="far fa-envelope"></i><a href="mailto:SeaBubbles@AOL.com"> SeaBubbles@AOL.com</a>
+        <br>
+        <p><i class="fas fa-phone"></i> (555)555-5555</p>
+      </div>
+      <div class="col-sm-4">
+        <a class="navbar-brand" href="#"><img class= "logo" src= "logo.png" alt= "SB"></a>
+      </div>
+    </div>
+    <p class= "copyright">&copy Website by: Nick Schneider & Braydon Bell</p>
   </footer>
 
   <script src="jquery.js"></script>
@@ -157,16 +172,6 @@
     $(window).scroll(function() {
       $('nav').toggleClass('scrolled', $(this).scrollTop() > 30)
     })
-    $(window).scroll(function() {
-      $(".slideanim").each(function() {
-        var pos = $(this).offset().top;
-
-        var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-      });
-    });
   </script>
 </body>
 
