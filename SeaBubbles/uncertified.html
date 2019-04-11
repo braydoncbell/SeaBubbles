@@ -38,25 +38,62 @@
 
     <div id= "uncertified-info" class="container">
       <h1 class= "package-header">Mid-Day Dives</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales nunc ac magna laoreet fermentum. Maecenas sollicitudin
-        est eu felis vulputate imperdiet. Fusce commodo, neque quis faucibus aliquet, turpis nibh imperdiet purus, nec ultrices sem
-        ligula sed enim. Morbi lobortis maximus ex, eu mollis turpis lacinia nec. Curabitur et leo ut diam porta sodales nec vitae nunc.
-        Integer tellus tellus, maximus eget eleifend quis, volutpat sit amet odio. Pellentesque habitant morbi tristique senectus et netus
-        et malesuada fames ac turpis egestas. Vestibulum ornare odio eget justo feugiat accumsan. Nulla in venenatis ante. Duis at risus mi.
-        Phasellus imperdiet libero justo. Proin vitae orci vel justo tempor lacinia
-      </p>
       <div class= "row">
-        <div class= "col-sm-6">
-          <h3 style= "text-decoration: underline; text-align: center;">Requirements</h3>
-          <ul style= "text-align: center; list-style-type: none;">
-            <li>Requirement 1</li>
-            <li>Requirement 2</li>
-            <li>Requirement 3</li>
-          </ul>
+
+        <div class="col-sm-6">
+          <p class="content-info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales nunc ac magna laoreet fermentum. Maecenas sollicitudin
+            est eu felis vulputate imperdiet. Fusce commodo, neque quis faucibus aliquet, turpis nibh imperdiet purus, nec ultrices sem
+            ligula sed enim. Morbi lobortis maximus ex, eu mollis turpis lacinia nec.
+          </p>
+
+          <h3>Requirements</h3>
+          <!-- tab area -->
+          <div class="tab">
+            <button class="tablinks" onclick="openReq(event, 'One')" id="defaultOpen">One</button>
+            <button class="tablinks" onclick="openReq(event, 'Two')">Two</button>
+            <button class="tablinks" onclick="openReq(event, 'Three')">Three</button>
+          </div>
+
+          <div id="One" class="tabcontent">
+            <h4>First Requirement</h4>
+            <p>Lorem ipsum.</p>
+          </div>
+
+          <div id="Two" class="tabcontent">
+            <h4>Second Requirement</h4>
+            <p>Lorem Ipsum.</p>
+          </div>
+
+          <div id="Three" class="tabcontent">
+            <h4>Third Requirement</h4>
+            <p>Lorem Ipsum.</p>
+          </div>
+
+          <script>
+          function openReq(evt, reqNum) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(reqNum).style.display = "block";
+            evt.currentTarget.className += " active";
+            document.getElementById(reqNum).evt.currentTarget.className += " active";
+          }
+
+          document.getElementById("defaultOpen").click();
+          </script>
+          <!-- end tab area -->
+
         </div>
+
         <div class= "col-sm-6">
-          <img class= "img-info" src= "scubafix2.jpg" alt= "Scuba2">
+          <img src= "scubafix2.jpg" alt= "Scuba2">
         </div>
       </div>
 
@@ -87,6 +124,7 @@
           $('nav').toggleClass('scrolled', $(this).scrollTop() > 30)
         })
       </script>
+
   </body>
 
 </html>

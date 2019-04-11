@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 html{
 	scroll-behavior: smooth;
 }
@@ -7,6 +7,7 @@ body{
 	color: #0192b9;
 	background-image: linear-gradient(#00c2ff, #001744);
 	margin: 0px 100px 0px 100px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 header{
@@ -22,6 +23,10 @@ header{
 	line-height: 1.42857143 !important;
 	letter-spacing: 4px;
 	border-radius: 0;
+}
+
+p {
+	color: #707070;
 }
 
 .navbar.scrolled{
@@ -255,25 +260,136 @@ i{
 }
 
 #certified-info{
-	color: white;
-	height: 700px;
-	padding-top: 100px;
+	background-color: white;
+	height: fit-content;
+	margin-top: 100px;
+	padding: 40px 50px;
+	border-radius: 100px;
 }
 
 #certified-info h1{
 	text-align: center;
-	text-decoration: underline;
 }
 
 #uncertified-info{
-	color: white;
-	height: 700px;
-	padding-top: 100px;
+	background-color: white;
+	height: fit-content;
+	margin-top: 100px;
+	padding: 40px 50px;
+	border-radius: 100px;
 }
 
-#uncertified-info h1{
-	text-align: center;
-	text-decoration: underline;
+/* Style the tab */
+.tab {
+  float: left;
+  background-color: #fff;
+  width: 30%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #ccc;
+  padding: 22px 16px;
+  width: 100%;
+	box-shadow: inset -8px 0px 10px -10px rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgb(235, 235, 235);
+	border-top:none;
+	border-right: none;
+	border-left: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab button:last-child {
+	border-bottom: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #F8F8F8;
+}
+
+.tab button.active:hover {
+  background-color: #fff;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+	box-shadow: none;
+	cursor: default;
+	color: #888888;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  height: 206px;
+}
+
+/* Start - Right Aligned tab area */
+/* Style the tab */
+.tab2 {
+  float: right;
+  background-color: #fff;
+  width: 30%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab2 button {
+  display: block;
+  background-color: inherit;
+  color: #ccc;
+  padding: 22px 16px;
+  width: 100%;
+	box-shadow: inset 8px 0px 10px -10px rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgb(235, 235, 235);
+	border-top:none;
+	border-right: none;
+	border-left: none;
+  outline: none;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab2 button:last-child {
+	border-bottom: none;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #F8F8F8;
+}
+
+.tab2 button.active:hover {
+  background-color: #fff;
+}
+
+/* Create an active/current "tab button" class */
+.tab2 button.active {
+	box-shadow: none;
+	cursor: default;
+	color: #888888;
+}
+
+/* Style the tab content */
+.tabcontent2 {
+  float: right;
+  padding: 0px 12px;
+  width: 70%;
+  height: 206px;
+}
+
+/* End - Right Aligned tab area */
+
+.right {
+	text-align: right;
 }
 
 .img-info{
